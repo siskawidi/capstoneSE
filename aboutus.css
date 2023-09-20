@@ -1,82 +1,115 @@
-/* Gaya CSS untuk halaman "About Us" */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+/* navbar */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: #EAF4FB;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+    height: 100px;
 }
 
-header {
-    background-color: aqua;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-.logo {
-    font-size: 25px;
-    font-weight: 600;
+.header img{
+    height:200px ;
+    width: 200px;
+    float: left;
 }
 .navbar a{
     font-size: 18px;
-    color: rgb(243, 214, 176);
+    color: #17206D;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 25px;
-
-.container {
-    width: 100%;
-    hight: 100vh;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: aqua;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 25px;  
 }
-.oman-dental-clinics  {
-    width:100%;
-    height :100vh;
-    align-items: center;
-    padding : 150px 30% 0;
-    justify-content: space-between;
-
+.navbar {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
 }
-
-.oman-dental-clinics h1 {
-    font-size: 50px;
-    color : black
-}
-.oman-dental-clinics p {
-    font-size: 20px;
-    color: black;
-    width: 500px;
-}
-.meet-our-specialist-gambar img {
-    text-align: right;
-    flex: 1;
-    width: 300px;
-    border-radius: 10%;
-}
-.meet-our-team-gambar img {
-    text-align: right;
-    flex: 1;
-    width: 300px;
-    border-radius: 10%;
-}
-h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-}
-
-a {
-    color: #007bff;
+.button a{
     text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background: #17206D;
+    border-radius: 25px;
+    border-color: #17206D;
+    border: 2px solid #17206D;
+    transition: border-color 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+.button a:hover{
+    background-color: transparent;
+    border-color: #17206D;
+    color: #17206D;
+}
+
+/* main page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+/* footer */
+.container {
+    background-color: #bbbeff;
+    margin: auto;
+    width: 100%;
+    padding: 40px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ul{
+    list-style-type: none;
+}
+
+.footer {
+    background-color:#bbbeff;
+    box-sizing: border-box;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 17px;
+    color: #000000;
+}
+.footer-col p{
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+.footer-col img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+@media(max-width:768px){
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom:30px ;
+    }
 }
